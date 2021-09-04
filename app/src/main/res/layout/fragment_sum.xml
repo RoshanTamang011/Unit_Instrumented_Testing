@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FF00"
+    android:orientation="vertical"
+    tools:context=".fragment.SumFragment">
+
+
+    <EditText
+        android:id="@+id/etFirstF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter first number" />
+
+    <EditText
+        android:id="@+id/etSecondF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter second number" />
+
+    <Button
+        android:id="@+id/btnSumF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sum" />
+
+    <TextView
+        android:id="@+id/tvResultF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
