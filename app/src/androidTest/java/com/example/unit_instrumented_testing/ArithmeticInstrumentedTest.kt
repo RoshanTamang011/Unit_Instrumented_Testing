@@ -1,37 +1,42 @@
 package com.example.unit_instrumented_testing
 
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.ViewAssertion
+import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.action.ViewActions.click
-import androidx.test.espresso.action.ViewActions.typeText
 import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers.*
+import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.withId
+import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.ActivityTestRule
 import org.junit.Rule
 import org.junit.Test
+import org.junit.rules.TestRule
+import org.junit.runner.RunWith
 
-class UITesting {
+class ArithmeticInstrumentedTest {
 
     @Rule
     @JvmField
-    val mainActivityRule = ActivityTestRule(MainActivity::class.java)
+    val testRule = ActivityTestRule(MainActivity::class.java)
 
     @Test
-    fun checkArithmeticUI(){
+    fun testArithmetic(){
         onView(withId(R.id.etFirst))
-            .perform(typeText("8"))
+            .perform(ViewActions.typeText("12"))
 
+        Thread.sleep(1000)
         onView(withId(R.id.etSecond))
-            .perform(typeText("2"))
+            .perform(ViewActions.typeText("12"))
 
         onView(withId(R.id.btnSum))
             .perform(click())
 
         Thread.sleep(1000)
+
+
         onView(withId(R.id.tvOutput))
-//            .check(matches(withText("Result is : 4.0")))
             .check(matches(isDisplayed()))
 
-
     }
+
 }
