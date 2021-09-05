@@ -12,6 +12,13 @@ class ArithmeticTest {
         val actualResult = arithmetic.add(4F, 6F)
         TestCase.assertEquals(expectedResult, actualResult)
     }
+    @Test
+    fun testAddition1() {
+        val arithmetic = Arithmetic()
+        val expectedResult = 10f
+        val actualResult = arithmetic.add(4F, 6F)
+        TestCase.assertEquals(expectedResult, actualResult)
+    }
 
     @Test
     fun testSubtraction() {
