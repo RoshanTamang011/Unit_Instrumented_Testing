@@ -11,7 +11,7 @@ import org.junit.Rule
 import org.junit.Test
 
 class UITesting {
-
+    val a = 3
     @Rule
     @JvmField
     val mainActivityRule = ActivityTestRule(MainActivity::class.java)

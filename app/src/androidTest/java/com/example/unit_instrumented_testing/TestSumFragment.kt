@@ -12,7 +12,7 @@ import org.junit.Rule
 import org.junit.Test
 
 class TestSumFragment {
-
+    val a = 3
 
     @Rule
     //JUnit rules provide more flexibility and reduce the boilerplate code required in tests.

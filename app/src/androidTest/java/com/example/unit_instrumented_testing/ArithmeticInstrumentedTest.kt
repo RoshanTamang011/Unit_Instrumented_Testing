@@ -15,6 +15,7 @@ import org.junit.runner.RunWith
 
 class ArithmeticInstrumentedTest {
 
+    val a = 3
     @Rule
     @JvmField
     val testRule = ActivityTestRule(MainActivity::class.java)

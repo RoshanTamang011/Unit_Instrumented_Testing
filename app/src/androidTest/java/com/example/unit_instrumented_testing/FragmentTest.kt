@@ -12,7 +12,7 @@ import org.junit.Rule
 import org.junit.Test
 
 class FragmentTest {
-
+    val a = 3
 
     @Rule
     @JvmField
