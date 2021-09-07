@@ -23,11 +23,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
+        android:text="0"
         android:hint="Enter first no" />
 
 
     <EditText
         android:id="@+id/etSecond"
+        android:text="0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter second no" />
